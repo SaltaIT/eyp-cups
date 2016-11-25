@@ -26,6 +26,7 @@ define cups::dummyqueue(
     exec { 'set default queue':
       command => "lpoptions -d ${queuename}",
       unless  => "lpoptions  | grep -Eo \"printer-info=[^ ]*\" | cut -f2 -d= | grep ${queuename}",
+      require => Exec["create dummy queue ${queuename}"],
     }
   }
 }
