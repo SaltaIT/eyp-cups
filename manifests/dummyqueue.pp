@@ -19,6 +19,7 @@ define cups::dummyqueue(
   exec { "create dummy queue ${queuename}":
     command => "lpadmin -p ${queuename} -E -v file:/dev/null",
     unless  => "lpstat -p ${queuename} -o ${queuename} | grep enabled",
+    require => Class['::cups'],
   }
 
   if($default)
