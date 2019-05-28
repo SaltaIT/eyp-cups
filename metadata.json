@@ -1,11 +1,11 @@
 {
   "name": "eyp-cups",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "eyp",
   "summary": "CUPS minimun setup with a dummy queue",
   "license": "Apache-2.0",
   "source": "https://github.com/NTTCom-MS/eyp-cups",
-  "project_page": null,
+  "project_page": "https://github.com/NTTCom-MS/eyp-cups",
   "issues_url": "https://github.com/NTTCom-MS/eyp-cups/issues",
   "dependencies": [
     {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.0"},
@@ -14,37 +14,33 @@
   "operatingsystem_support": [
     {
       "operatingsystem": "RedHat",
-      "operatingsystemrelease": [ "5", "6", "7" ]
+      "operatingsystemrelease": [ "5", "6", "7", "8" ]
     },
     {
       "operatingsystem": "CentOS",
-      "operatingsystemrelease": [ "5", "6", "7" ]
+      "operatingsystemrelease": [ "5", "6", "7", "8" ]
     },
     {
       "operatingsystem": "Scientific",
-      "operatingsystemrelease": [ "5", "6", "7" ]
+      "operatingsystemrelease": [ "5", "6", "7", "8" ]
     },
     {
       "operatingsystem": "OEL",
-      "operatingsystemrelease": [ "5", "6", "7" ]
+      "operatingsystemrelease": [ "5", "6", "7", "8" ]
     },
     {
       "operatingsystem": "OracleLinux",
-      "operatingsystemrelease": [ "5", "6", "7" ]
+      "operatingsystemrelease": [ "5", "6", "7", "8" ]
     },
     {
       "operatingsystem": "Ubuntu",
-      "operatingsystemrelease": [ "14.04" ]
+      "operatingsystemrelease": [ "14.04", "16.04", "18.04" ]
     }
   ],
   "requirements": [
     {
-      "name": "pe",
-      "version_requirement": ">= 3.0.0"
-    },
-    {
       "name": "puppet",
-      "version_requirement": ">= 3.0.0"
+      "version_requirement": ">= 3.8.0"
     }
   ]
 }
