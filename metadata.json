@@ -1,7 +1,7 @@
 {
   "name": "eyp-cups",
   "version": "0.1.2",
-  "author": "eyp",
+  "author": "Jordi Prats",
   "summary": "CUPS minimun setup with a dummy queue",
   "license": "Apache-2.0",
   "source": "https://github.com/SaltaIT/eyp-cups",
